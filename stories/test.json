@@ -1,0 +1,189 @@
+{
+    "story_metadata": {
+        "name": "Paths of the Forgotten Realm"
+    },
+    "start": {
+        "text": "You find yourself in a dark forest. There's a path to your left and right.",
+        "options": {
+            "go_left": "left_path",
+            "go_right": "right_path"
+        },
+        "audio": "start.mp3"
+    },
+    "left_path": {
+        "text": "You encounter a river. There's a bridge to cross or a boat you can take.",
+        "options": {
+            "cross_bridge": "bridge_crossing",
+            "take_boat": "boat_ride"
+        },
+        "audio": "left_path.mp3"
+    },
+    "right_path": {
+        "text": "You come across an ancient, twisted tree. There's a ladder leading up to a treehouse and a narrow path that leads deeper into the forest.",
+        "options": {
+            "climb_treehouse": "treehouse",
+            "deeper_forest": "deep_forest"
+        },
+        "audio": "right_path.mp3"
+    },
+    "bridge_crossing": {
+        "text": "You carefully cross the bridge, but halfway across, a troll blocks your path and demands a riddle answer to pass.",
+        "options": {
+            "answer_riddle": "troll_pass",
+            "turn_back": "left_path"
+        },
+        "audio": "bridge_crossing.mp3"
+    },
+    "boat_ride": {
+        "text": "You take the boat and begin to row across the river, but fog surrounds you, and a ghostly figure appears, offering guidance to reach the other side safely.",
+        "options": {
+            "accept_guidance": "safe_landing",
+            "row_on_your_own": "lost_in_fog"
+        },
+        "audio": "boat_ride.mp3"
+    },
+    "treehouse": {
+        "text": "You climb up into the treehouse and find a treasure chest and a mysterious map on a table.",
+        "options": {
+            "open_chest": "treasure",
+            "take_map": "map_path"
+        },
+        "audio": "treehouse.mp3"
+    },
+    "deep_forest": {
+        "text": "The path leads deeper into the forest until you find an ancient stone circle. A faint light glows from the center.",
+        "options": {
+            "investigate_light": "mystical_light",
+            "leave_area": "start"
+        },
+        "audio": "deep_forest.mp3"
+    },
+    "troll_pass": {
+        "text": "You answer the riddle correctly! The troll lets you pass, and you find a peaceful meadow with a hidden village.",
+        "options": {
+            "enter_village": "village",
+            "rest_in_meadow": "meadow_rest"
+        },
+        "audio": "troll_pass.mp3"
+    },
+    "safe_landing": {
+        "text": "With the ghost's guidance, you safely reach the other side of the river and find a path leading to a mountain trail.",
+        "options": {
+            "follow_trail": "mountain",
+            "set_camp": "camp"
+        },
+        "audio": "safe_landing.mp3"
+    },
+    "lost_in_fog": {
+        "text": "You row through the fog alone, but the fog thickens, and you become hopelessly lost.",
+        "options": {
+            "try_calling_for_help": "help_appears",
+            "row_harder": "boat_sinks"
+        },
+        "audio": "lost_in_fog.mp3"
+    },
+    "treasure": {
+        "text": "You open the chest and find gold coins and a mystical artifact. Suddenly, you feel an energy coursing through you.",
+        "options": {
+            "take_coins": "coins_path",
+            "take_artifact": "artifact_power"
+        },
+        "audio": "treasure.mp3"
+    },
+    "map_path": {
+        "text": "You take the map, which shows hidden paths throughout the forest. One leads to a hidden castle, and another to an ancient ruin.",
+        "options": {
+            "follow_castle_path": "castle",
+            "follow_ruin_path": "ruins"
+        },
+        "audio": "map_path.mp3"
+    },
+    "mystical_light": {
+        "text": "As you approach the light, it transforms into a glowing portal. You sense a strange power pulling you in.",
+        "options": {
+            "enter_portal": "portal_world",
+            "retreat_to_forest": "start"
+        },
+        "audio": "mystical_light.mp3"
+    },
+    "village": {
+        "text": "The villagers welcome you warmly, offering food and shelter. They tell you of a hidden treasure deep in the forest.",
+        "options": {
+            "accept_food": "feast",
+            "ask_about_treasure": "treasure_hunt"
+        },
+        "audio": "village.mp3"
+    },
+    "meadow_rest": {
+        "text": "You rest in the meadow, feeling the peace of the surroundings. A deer approaches and nuzzles your hand.",
+        "options": {
+            "pet_deer": "new_companion",
+            "stay_asleep": "woken_by_sound"
+        },
+        "audio": "meadow_rest.mp3"
+    },
+    "mountain": {
+        "text": "The mountain trail leads to a cave with strange carvings at its entrance.",
+        "options": {
+            "enter_cave": "inside_cave",
+            "return_down_mountain": "safe_landing"
+        },
+        "audio": "mountain.mp3"
+    },
+    "camp": {
+        "text": "You set up camp by the river and enjoy a restful night under the stars.",
+        "options": {
+            "sleep": "dream",
+            "stay_awake": "night_surprise"
+        },
+        "audio": "camp.mp3"
+    },
+    "help_appears": {
+        "text": "A figure appears in the fog and guides you to safety on the other side of the river.",
+        "options": {
+            "thank_figure": "mysterious_friend",
+            "run_away": "safe_landing"
+        },
+        "audio": "help_appears.mp3"
+    },
+    "boat_sinks": {
+        "text": "Your boat capsizes, and you find yourself struggling to swim back to shore.",
+        "options": {
+            "swim_to_shore": "start",
+            "call_for_help": "help_appears"
+        },
+        "audio": "boat_sinks.mp3"
+    },
+    "coins_path": {
+        "text": "You take the coins, feeling wealthier but strangely burdened. The forest path ahead seems darker.",
+        "options": {
+            "continue_on_path": "dark_forest",
+            "return_to_treehouse": "treehouse"
+        },
+        "audio": "coins_path.mp3"
+    },
+    "artifact_power": {
+        "text": "The artifact grants you a vision of hidden paths through the forest. You feel energized and ready to explore.",
+        "options": {
+            "follow_vision": "vision_path",
+            "store_artifact": "camp"
+        },
+        "audio": "artifact_power.mp3"
+    },
+    "castle": {
+        "text": "The path leads you to an ancient castle, overgrown but still standing strong. The gates are slightly open.",
+        "options": {
+            "enter_castle": "inside_castle",
+            "explore_courtyard": "courtyard"
+        },
+        "audio": "castle.mp3"
+    },
+    "ruins": {
+        "text": "You find yourself at a mystical ruin. Ancient carvings glow faintly, and you feel a strong energy here.",
+        "options": {
+            "touch_carvings": "secret_room",
+            "leave_ruins": "map_path"
+        },
+        "audio": "ruins.mp3"
+    }
+}

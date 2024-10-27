@@ -1,0 +1,242 @@
+{
+    "story_metadata": {
+        "name": "Echoes of the Enchanted Forest"
+    },
+    "start": {
+        "text": "You find yourself in a dark forest. There's a path to your left and right, and an overgrown trail ahead that looks rarely traveled.",
+        "options": {
+            "go_left": "left_path",
+            "go_right": "right_path",
+            "explore_trail": "overgrown_trail"
+        },
+        "audio": "start.mp3"
+    },
+    "overgrown_trail": {
+        "text": "You push through the thick vegetation and find yourself in a misty clearing where strange mushrooms glow faintly. There's a well in the center of the clearing and a small cave entrance nearby.",
+        "options": {
+            "inspect_well": "mystic_well",
+            "enter_cave": "cave_entrance",
+            "pick_mushrooms": "glowing_mushrooms"
+        },
+        "audio": "overgrown_trail.mp3"
+    },
+    "mystic_well": {
+        "text": "Peering into the well, you see a faint light at the bottom. An old rope is attached, inviting you to climb down. You also notice a small pouch of coins on the edge of the well.",
+        "options": {
+            "climb_down": "well_depths",
+            "take_coins": "curse_coins",
+            "leave_well": "overgrown_trail"
+        },
+        "audio": "mystic_well.mp3"
+    },
+    "well_depths": {
+        "text": "You climb down and discover an underground chamber with ancient symbols on the walls. A pool of crystal-clear water glows in the center.",
+        "options": {
+            "touch_water": "water_vision",
+            "examine_symbols": "symbol_revelation",
+            "climb_up": "overgrown_trail"
+        },
+        "audio": "well_depths.mp3"
+    },
+    "curse_coins": {
+        "text": "You take the coins, but a chill runs down your spine. Suddenly, shadows gather around the clearing, and the forest grows eerily silent.",
+        "options": {
+            "drop_coins": "overgrown_trail",
+            "keep_coins": "shadow_encounter",
+            "run_away": "start"
+        },
+        "audio": "curse_coins.mp3"
+    },
+    "shadow_encounter": {
+        "text": "The shadows solidify into a creature with piercing eyes. It demands a sacrifice for the stolen treasure.",
+        "options": {
+            "offer_coins": "creature_appeased",
+            "fight_back": "creature_attack",
+            "flee": "overgrown_trail"
+        },
+        "audio": "shadow_encounter.mp3"
+    },
+    "creature_appeased": {
+        "text": "You return the coins, and the creature vanishes, leaving a small, mysterious key behind.",
+        "options": {
+            "take_key": "key_path",
+            "leave_key": "overgrown_trail"
+        },
+        "audio": "creature_appeased.mp3"
+    },
+    "cave_entrance": {
+        "text": "The cave entrance is dark, with faint echoes hinting at creatures inside. You see a set of old footprints leading further in.",
+        "options": {
+            "follow_footprints": "deep_cave",
+            "search_entrance": "cave_discovery",
+            "light_torch": "cave_exploration"
+        },
+        "audio": "cave_entrance.mp3"
+    },
+    "deep_cave": {
+        "text": "Deeper in the cave, you find a strange stone altar with an ancient artifact placed upon it. Symbols surround the artifact, glowing faintly.",
+        "options": {
+            "take_artifact": "artifact_curse",
+            "read_symbols": "altar_knowledge",
+            "leave_cave": "cave_entrance"
+        },
+        "audio": "deep_cave.mp3"
+    },
+    "glowing_mushrooms": {
+        "text": "You pick a handful of glowing mushrooms, feeling a strange energy surge through you. You wonder if they are edible.",
+        "options": {
+            "eat_mushrooms": "vision_trance",
+            "save_mushrooms": "inventory",
+            "discard_mushrooms": "overgrown_trail"
+        },
+        "audio": "glowing_mushrooms.mp3"
+    },
+    "vision_trance": {
+        "text": "You eat the mushrooms and are swept into a vision. You see hidden paths through the forest and a hidden sanctuary guarded by ancient beings.",
+        "options": {
+            "follow_vision_path": "sanctuary",
+            "wait_out_vision": "overgrown_trail"
+        },
+        "audio": "vision_trance.mp3"
+    },
+    "symbol_revelation": {
+        "text": "The symbols reveal a prophecy about a lost hero destined to protect the forest. The words seem to glow brighter, and you feel a sense of purpose awaken within you.",
+        "options": {
+            "embrace_destiny": "hero_path",
+            "ignore_prophecy": "well_depths",
+            "climb_up": "overgrown_trail"
+        },
+        "audio": "symbol_revelation.mp3"
+    },
+    "hero_path": {
+        "text": "You accept the role of protector. You sense a path forming before you, leading deeper into the mystical forest.",
+        "options": {
+            "follow_path": "guardian",
+            "return_to_clearing": "overgrown_trail"
+        },
+        "audio": "hero_path.mp3"
+    },
+    "guardian": {
+        "text": "The forest opens up, revealing a glade bathed in golden light. Beings of light welcome you, offering wisdom and a mystical weapon to defend the forest.",
+        "options": {
+            "accept_weapon": "forest_guardian",
+            "decline_weapon": "peacekeeper",
+            "ask_for_guidance": "forest_guardian"
+        },
+        "audio": "guardian.mp3"
+    },
+    "artifact_curse": {
+        "text": "As you take the artifact, a dark power binds to you. Whispers fill the air, and the walls of the cave tremble.",
+        "options": {
+            "resist_curse": "curse_broken",
+            "accept_power": "dark_path",
+            "drop_artifact": "cave_entrance"
+        },
+        "audio": "artifact_curse.mp3"
+    },
+    "curse_broken": {
+        "text": "You fight the curse with all your strength. The whispers fade, and a hidden door appears, leading further into the cave.",
+        "options": {
+            "enter_hidden_door": "secret_chamber",
+            "leave_cave": "overgrown_trail"
+        },
+        "audio": "curse_broken.mp3"
+    },
+    "dark_path": {
+        "text": "The artifact's power takes root in you, and you feel your intentions darken. A path emerges, leading you toward an ancient throne room.",
+        "options": {
+            "sit_on_throne": "dark_throne",
+            "leave_path": "overgrown_trail"
+        },
+        "audio": "dark_path.mp3"
+    },
+    "castle": {
+        "text": "The path leads you to an ancient castle, overgrown but still standing strong. The gates are slightly open, and eerie whispers drift from within.",
+        "options": {
+            "enter_castle": "inside_castle",
+            "explore_courtyard": "courtyard",
+            "search_for_entrance": "hidden_door"
+        },
+        "audio": "castle.mp3"
+    },
+    "inside_castle": {
+        "text": "You step into the castle's grand hall, where shadows flicker and strange tapestries adorn the walls.",
+        "options": {
+            "examine_tapestries": "tapestry_secret",
+            "head_upstairs": "castle_tower",
+            "explore_basement": "castle_dungeon"
+        },
+        "audio": "inside_castle.mp3"
+    },
+    "tapestry_secret": {
+        "text": "The tapestries reveal a hidden family line with connections to ancient magic. A strange emblem catches your eye.",
+        "options": {
+            "take_emblem": "emblem_power",
+            "leave_emblem": "inside_castle",
+            "inspect_emblem": "hidden_chamber"
+        },
+        "audio": "tapestry_secret.mp3"
+    },
+    "hidden_chamber": {
+        "text": "Touching the emblem, a hidden chamber opens up, filled with books, maps, and magical items. A diary lies open on a table.",
+        "options": {
+            "read_diary": "ancient_knowledge",
+            "take_magic_item": "item_power",
+            "leave_chamber": "inside_castle"
+        },
+        "audio": "hidden_chamber.mp3"
+    },
+    "ancient_knowledge": {
+        "text": "The diary reveals secrets of the forest and the key to a hidden sanctuary where ancient beings guard mystical relics.",
+        "options": {
+            "seek_sanctuary": "sanctuary",
+            "return_castle": "inside_castle"
+        },
+        "audio": "ancient_knowledge.mp3"
+    },
+    "sanctuary": {
+        "text": "After a long journey, you find the sanctuary. Beings of light greet you, offering a chance to join them or simply rest in the peaceful haven.",
+        "options": {
+            "join_beings": "eternal_guardian",
+            "rest_in_haven": "peaceful_end",
+            "ask_about_relics": "relic_discovery"
+        },
+        "audio": "sanctuary.mp3"
+    },
+    "eternal_guardian": {
+        "text": "You decide to stay and guard the sanctuary, feeling a sense of deep fulfillment and purpose.",
+        "options": {
+            "accept_role": "final_end",
+            "reconsider": "sanctuary"
+        },
+        "audio": "eternal_guardian.mp3"
+    },
+    "peaceful_end": {
+        "text": "You rest in the haven, feeling your journey and purpose complete. The forest flourishes around you as you drift into a deep peace.",
+        "options": {
+            "end_story": "final_end"
+        },
+        "audio": "peaceful_end.mp3"
+    },
+    "relic_discovery": {
+        "text": "The beings reveal ancient relics that bestow powers to protect the forest and ward off darkness.",
+        "options": {
+            "accept_relic": "forest_protector",
+            "leave_relic": "peaceful_end"
+        },
+        "audio": "relic_discovery.mp3"
+    },
+    "forest_protector": {
+        "text": "With the relic in hand, you feel a surge of power and wisdom. The forest seems to open up with paths previously hidden.",
+        "options": {
+            "explore_new_paths": "new_adventures",
+            "return_to_sanctuary": "sanctuary"
+        },
+        "audio": "forest_protector.mp3"
+    },
+    "final_end": {
+        "text": "You have reached the end of your journey. The forest is safe, and your legacy as its guardian will live on.",
+        "options": {},
+        "audio": "final_end.mp3"
+    }
+}
